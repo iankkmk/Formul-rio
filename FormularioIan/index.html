@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+    <head>
+        <meta charset="UTF-8">
+        <title>formulario de cadastro</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="js/validation.js" defer></script>
+    </head>
+    <body>
+       <div class="container">  
+          <form id="contact" action="" method="post">
+            <h3>Formulário de cadastro</h3>        
+            <fieldset>
+              <input placeholder="Nome" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            
+              <input placeholder="Endereço de email" type="text" tabindex="2" onkeyup="validaEmail(event)" required></input>
+            
+            <fieldset>
+              <input placeholder="Número de Telefone" type="text" tabindex="3" required oninput="validaTelefone(event)">
+            </fieldset>            
+            <fieldset>
+              <fieldset>
+                <input placeholder="CPF" type="text" tobindex="4" required oninput="validaCPF(event)" required></input>
+             </fieldset>
+             <input placeholder="Digite seu Endereço" id="address" type="text" tobindex="5" required oninput="validaendereço(event)" required></input>
+             </fieldset>
+             <fieldset>
+              <input placeholder="Renda" type="text" tobindex="6" required oninput="validaRenda(event)" required></input>
+           </fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Enviando">Enviar</button>
+            </fieldset>
+            <fieldset>
+          </form>
+        </div>          
+
+    </body>
+
+</html>
